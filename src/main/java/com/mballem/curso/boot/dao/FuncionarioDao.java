@@ -16,4 +16,5 @@ public interface FuncionarioDao {
 	List<Funcionario> findByData(LocalDate entrada, LocalDate saida);
 	List<Funcionario> findByDataEntrada(LocalDate entrada);
 	List<Funcionario> findByDataSaida(LocalDate saida);
+	List<Funcionario> findByMatricula(String matricula); // New method for searching by matrícula
 }
